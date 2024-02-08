@@ -1,0 +1,101 @@
+/* vars, fonts, ... */
+@font-face {
+  font-family: Vazirmatn;
+  src: url(./Vazirmatn.ttf);
+}
+
+/* base... */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html, body {
+  min-height: 100vh;
+  background: #121212;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+body {
+  color: #f8f9fa;
+  font-family: Vazirmatn, sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: grid;
+  place-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: #212529;
+  padding: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* main... */
+#app {
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+  background: #212529;
+  width: 30rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+input {
+  background: #343a40;
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: inherit;
+  outline: none;
+  font-family: inherit;
+}
+[type="submit"], button {
+  cursor: pointer;
+  transition: all 200ms;
+}
+[type="submit"]:hover, button:hover {
+  background: #228be6;
+  color: white;
+}
+p:not(:last-of-type) {
+  margin-bottom: 1rem;
+}
+hr {
+  border: none;
+  border-radius: 13rem;
+  height: 0.2rem;
+  width: 100%;
+  background: #495057;
+}
+h1 {
+  font-size: 140%;
+  text-align: center;
+  margin: 1rem 0 2rem 0;
+}
+.important {
+  display: inline-block;
+  color: white;
+  padding: 0.5rem 1rem;
+  background-color: #5c5c5c;
+  border-radius: 0.2rem;
+}
+.link {
+  color: #228be6;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
